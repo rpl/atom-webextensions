@@ -1,0 +1,18 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "WebExtensions",
+          "submenu": [
+            {
+              "label": "Open MDN Docs",
+              "command": "web-ext:open-mdn-docs"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
