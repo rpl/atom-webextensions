@@ -40,6 +40,6 @@ addons:
     - libgnome-keyring-dev
     - fakeroot
 
-#branches:
-#  only:
-#    - master
+branches:
+  only:
+  - master
