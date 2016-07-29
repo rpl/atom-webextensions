@@ -1,0 +1,13 @@
+[ignore]
+.*/node_modules/atom-linter
+.*/spec/fixtures
+
+[include]
+lib
+spec
+
+[libs]
+flow-typed
+
+[options]
+module.system=node

@@ -30,5 +30,12 @@
         "1.0.0": "provideLinter"
       }
     }
+  },
+  "devDependencies": {
+    "flow-bin": "0.29.0"
+  },
+  "scripts": {
+    "flow-check": "flow check",
+    "test": "flow check && apm test"
   }
 }
