@@ -1,2 +1,5 @@
 flow-typed/
 spec/fixtures
+
+## NOTE: where travis installs the Atom editor for launching tests.
+atom/
