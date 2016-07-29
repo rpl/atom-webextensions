@@ -7,11 +7,9 @@ install:
 - npm install -g addons-linter
 - npm install -g flow-bin
 
-before_script:
-- flow check
-
 script:
 - 'curl -s https://raw.githubusercontent.com/atom/ci/master/build-package.sh | sh'
+- flow check
 
 git:
   depth: 10

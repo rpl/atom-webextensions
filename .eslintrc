@@ -1,0 +1,22 @@
+parser: babel-eslint
+extends: airbnb-base
+
+plugins:
+- babel
+- import
+
+globals:
+  atom: true
+  TextEditor: true
+
+env:
+  es6: true
+  node: true
+
+rules:
+
+  ### Fix issue with babel-eslint and async functions:
+  ### - https://github.com/eslint/eslint/issues/6274
+
+  generator-star-spacing: 0
+  babel/generator-star-spacing: 1
