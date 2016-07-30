@@ -3,6 +3,15 @@ notifications:
     on_success: never
     on_failure: change
 
+### workaround needed to be able to run conventional-changelog-lint on travis
+before_install:
+# Create a master branch for conventional-changelog-lint
+- git remote set-branches origin master
+- git fetch
+- git checkout master
+# Check out the commit that TravisCI started on:
+- git checkout -
+
 install:
 - npm install -g addons-linter
 - npm install -g flow-bin
@@ -10,6 +19,7 @@ install:
 script:
 - 'curl -s https://raw.githubusercontent.com/atom/ci/master/build-package.sh | sh'
 - flow check
+- npm run changelog-lint
 
 git:
   depth: 10
@@ -43,3 +53,8 @@ addons:
 branches:
   only:
   - master
+
+### cache node_modules/ dir between builds on travis
+cache:
+  directories:
+    - node_modules
