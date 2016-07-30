@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1 (2016-07-30)
+
+### Bug Fixes
+
+* workarounded addons-linter issues in presence of a node_modules/ dir ([39c2f81](https://github.com/rpl/atom-webextensions/commit/39c2f81))
+
 ## 0.1.0 (2016-07-30)
 
 ### Bug Fixes
