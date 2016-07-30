@@ -18,6 +18,10 @@ declare class CompositeDisposableClass {
   dispose(): void;
 }
 
+declare class Disposable {
+  dispose(): void;
+}
+
 export type Point = [number, number]
 export type Range = [Point, Point]
 
@@ -44,6 +48,30 @@ declare class LinterHelpers {
   rangeFromLineNumber(textEditor: TextEditor, line: number, col: number): Range;
 }
 
+declare type LinterMessageType = 'Warning' | 'Error';
+
+declare type LinterMessage = {
+  type: LinterMessageType,
+  html?: string,
+  text?: string,
+  range: Range,
+  filePath: string,
+}
+
 declare module 'atom-linter' {
   declare var exports: LinterHelpers;
+}
+
+declare type LinterMessages = Array<LinterMessage>;
+
+declare type LinterScopeType = 'file' | 'project';
+
+declare type LinterCallback = (textEditor: TextEditor) => Promise<LinterMessages>;
+
+declare type LinterInfo = {
+  name: string,
+  grammarScopes: Array<string>,
+  scope: LinterScopeType,
+  lintOnFly: bool,
+  lint: LinterCallback
 }
