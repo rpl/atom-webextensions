@@ -1,7 +1,7 @@
 {
   "name": "atom-webextensions",
   "main": "./lib/plugin",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "An Atom plugin to boost your WebExtensions add-on development.",
   "keywords": [
     "Mozilla",
@@ -29,7 +29,7 @@
     "atom-linter": "7.0.0",
     "atom-package-deps": "4.0.1"
   },
-   "package-deps": [
+  "package-deps": [
     "linter"
   ],
   "providedServices": {
