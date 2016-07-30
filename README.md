@@ -9,6 +9,8 @@ It currently provides the following features:
 - linting an addon project using the [addons-linter][addons-linter]
 - open the WebExtensions MDN landing page
 
+Take a look at the [Changelog][changelog] for more details about the recent changes.
+
 [![Screenshot of atom-webextensions in action][screenshot]][screencast]
 
 ## Installation from apm
@@ -16,8 +18,9 @@ It currently provides the following features:
 You'll need:
 * [Atom][atom], 1.0 or higher
 
-As an highly experimental Atom plugin, this is not yet installable directly from the
-Atom editor, but you can easily install it from the command line:
+As an highly experimental Atom plugin, sometimes you may want to install a more recent version
+of the one currently listed in the Atom packages list, you can easily install the "bleeding edge"
+version of this plugin from the command line:
 
     apm install rpl/atom-webextensions
 
@@ -43,3 +46,4 @@ properly hack on the plugin sources (e.g. how to run tests, writing commit messa
 [screenshot]: https://raw.githubusercontent.com/rpl/atom-webextensions/master/assets/screenshot.png
 [screencast]: https://youtu.be/7pzyDttiBhk
 [contributing]: CONTRIBUTING.md
+[changelog]: CHANGELOG.md

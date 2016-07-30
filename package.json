@@ -12,8 +12,16 @@
     "addons-linter",
     "web-ext"
   ],
-  "repository": "https://github.com/rpl/atom-webext-plugin",
   "license": "MPL-2.0",
+  "homepage": "https://github.com/rpl/atom-webextensions",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rpl/atom-webextensions.git"
+  },
+  "bugs": {
+    "url": "http://github.com/rpl/atom-webextensions/issues"
+  },
+  "author": "Luca Greco <lgreco@mozilla.com>",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
