@@ -18,8 +18,10 @@ declare class CompositeDisposableClass {
   dispose(): void;
 }
 
+export type Point = [number, number]
+export type Range = [Point, Point]
+
 declare module 'atom' {
-  declare var Range: any;
   declare var CompositeDisposable: any;
   declare var config: Config;
 }
@@ -37,7 +39,11 @@ declare class TextEditor {
   getLineCount(): number;
 }
 
+declare class LinterHelpers {
+  exec(exec: string, args: Array<string>, opts: any): Promise<string>;
+  rangeFromLineNumber(textEditor: TextEditor, line: number, col: number): Range;
+}
+
 declare module 'atom-linter' {
-  declare function exec(exec: string, args: Array<string>, opts: any): Promise<string>;
-  declare function rangeFromLineNumber(textEditor: TextEditor, line: number, col: number): Range;
+  declare var exports: LinterHelpers;
 }

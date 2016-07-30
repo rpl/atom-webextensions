@@ -4,6 +4,7 @@ extends: airbnb-base
 plugins:
 - babel
 - import
+- flow-vars
 
 globals:
   atom: true
@@ -20,3 +21,8 @@ rules:
 
   generator-star-spacing: 0
   babel/generator-star-spacing: 1
+
+  ### Fix issue with babel-eslint and flow type declarations
+
+  flow-vars/define-flow-type: 1
+  flow-vars/use-flow-type: 1
