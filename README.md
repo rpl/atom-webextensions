@@ -1,6 +1,7 @@
 # atom-webextension plugin package
 
 [![Build Status](https://travis-ci.org/rpl/atom-webextensions.svg?branch=master)](https://travis-ci.org/rpl/atom-webextensions)
+[![Package version!](https://img.shields.io/apm/v/atom-webextensions.svg?style=flat)](https://atom.io/packages/atom-webextensions)
 
 This package provides a plugin for the [Atom Editor][atom]
 
