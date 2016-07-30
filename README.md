@@ -1,16 +1,20 @@
 # atom-webextension plugin package
 
-This package provides a plugin for the [Atom Editor](https://atom.io)
+[![Build Status](https://travis-ci.org/rpl/atom-webextensions.svg?branch=master)](https://travis-ci.org/rpl/atom-webextensions)
+
+This package provides a plugin for the [Atom Editor][atom]
 
 It currently provides the following features:
 
-- linting an addon project using the [addons-linter](https://github.com/mozilla/addons-linter)
+- linting an addon project using the [addons-linter][addons-linter]
 - open the WebExtensions MDN landing page
+
+[![Screenshot of atom-webextensions in action][screenshot]][screencast]
 
 ## Installation from apm
 
 You'll need:
-* [Atom](https://atom.io/), 1.0 or higher
+* [Atom][atom], 1.0 or higher
 
 As an highly experimental Atom plugin, this is not yet installable directly from the
 Atom editor, but you can easily install it from the command line:
@@ -31,5 +35,11 @@ the plugin to Atom Development Mode:
     apm link --dev
     atom -d
 
-Take a look a [CONTRIBUTING.md](CONTRIBUTING.md) for more information on how to
+Take a look a [CONTRIBUTING.md][contributing] for more information on how to
 properly hack on the plugin sources (e.g. how to run tests, writing commit messages etc.)
+
+[atom]: https://atom.io
+[addons-linter]: https://github.com/mozilla/addons-linter
+[screenshot]: https://raw.githubusercontent.com/rpl/atom-webextensions/master/assets/screenshot.png
+[screencast]: https://youtu.be/7pzyDttiBhk
+[contributing]: CONTRIBUTING.md
