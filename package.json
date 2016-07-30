@@ -1,7 +1,7 @@
 {
   "name": "atom-webextensions",
   "main": "./lib/plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An Atom plugin to boost your WebExtensions add-on development.",
   "keywords": [
     "Mozilla",
