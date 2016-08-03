@@ -13,7 +13,7 @@ before_install:
 - git checkout -
 
 install:
-- npm install -g addons-linter
+- npm install -g web-ext
 - npm install -g flow-bin
 
 script:
